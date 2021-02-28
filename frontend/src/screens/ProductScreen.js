@@ -35,7 +35,7 @@ const ProductScreen = ({ match }) => {
               <Row>
                 <Col>Price:</Col>
                 <Col>
-                  <strong>${product.price}</strong>
+                  <strong>&#8377;{product.price}</strong>
                 </Col>
               </Row>
             </ListGroup.Item>
