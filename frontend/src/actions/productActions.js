@@ -10,7 +10,7 @@ export const listProducts = () => async (dispatch) => {
     dispatch({ type: PRODUCT_LIST_REQUEST })
 
     //the data will be used in product list success
-    const { data } = await axios.cen('/api/products')
+    const { data } = await axios.get('/api/products')
     dispatch({
       type: PRODUCT_LIST_SUCCESS,
       payload: data,
