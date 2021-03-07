@@ -31,3 +31,8 @@ app.listen(
     `server running in ${process.env.NODE_ENV} mode on port ${5000}`.yellow.bold
   )
 )
+
+// stack over flow proxy error 
+process.on('uncaughtException', function (err) {
+  console.log(err);
+}); 
